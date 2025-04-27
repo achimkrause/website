@@ -54,3 +54,8 @@ div.info {
     font-size: 14px;
     font-style: italic;
 }
+
+img {
+  margin: auto;
+  display: block;
+}
