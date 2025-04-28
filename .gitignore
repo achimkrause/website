@@ -19,3 +19,6 @@ cabal.sandbox.config
 .stack-work/
 _cache/
 _site/
+
+### CNAME record managed by github and should not be cleaned ###
+docs/CNAME

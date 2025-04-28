@@ -58,4 +58,5 @@ div.info {
 img {
   margin: auto;
   display: block;
+  border-radius: 30px;
 }
