@@ -6,8 +6,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>Achim Krause - $title$</title>
         <link rel="stylesheet" type="text/css" href="/css/default.css" />
-        <script type="text/javascript" async
-                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+        <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$$', '$$'], ['\\(', '\\)']],
+            macros: {
+              bN: "\\mathbb{N}",
+              bZ: "\\mathbb{Z}",
+              bQ: "\\mathbb{Q}",
+              bR: "\\mathbb{R}",
+              bC: "\\mathbb{C}",
+              bS: "\\mathbb{S}"
+            }
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
         </script>
     </head>
     <body>
@@ -19,6 +37,7 @@
                 <a href="/">Home</a>
                 <a href="/writing.html">Writing</a>
                 <a href="/about.html">About Me</a>
+                <a href="/blog.html">Blog</a>
             </div>
         </div>
 

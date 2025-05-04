@@ -3,9 +3,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Achim Krause - Archives</title>
+        <title>Achim Krause - Blog</title>
         <link rel="stylesheet" type="text/css" href="./css/default.css" />
-        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+        <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            macros: {
+              bN: "\\mathbb{N}",
+              bZ: "\\mathbb{Z}",
+              bQ: "\\mathbb{Q}",
+              bR: "\\mathbb{R}",
+              bC: "\\mathbb{C}",
+              bS: "\\mathbb{S}"
+            }
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
         </script>
     </head>
     <body>
@@ -17,17 +35,19 @@
                 <a href="./">Home</a>
                 <a href="./writing.html">Writing</a>
                 <a href="./about.html">About Me</a>
+                <a href="./blog.html">Blog</a>
             </div>
         </div>
 
         <div id="content">
-            <h1>Archives</h1>
+            <h1>Blog</h1>
 
-            Here you can find all my previous posts:
+            Here I post every once in a while, mainly about fun side projects.
+
 <ul>
     
         <li>
-            <a href="./posts/2015-08-23-example.html">example post</a> - August 23, 2015
+            <a href="./posts/additive-generation.html">Additively generating modular units</a> - May  4, 2025
         </li>
     
 </ul>
