@@ -12,7 +12,7 @@ As was already pointed out in the MO thread, clearly $S_m=\{1\}$ if $m$ is even.
 **Conjecture.** For odd $m$, $S_m = (\bZ/m)^\times$ if and only if $15$ does not divide $m$.
 
 The "only if" part is straightforward: If $d\mid m$, the map $(\bZ/m)^\times \to (\bZ/d)^\times$ takes $S_m$ into $S_d$ (for example because the preimage of $S_d$ is also closed under "coprime addition"). So if $S_d \neq (\bZ/d)^\times$, then also $S_m\neq (\bZ/m)^\times$.
-The evidence discussed for this statement in the MO thread is extremely thin, the OP mentions having checked it for $m<100$. I hacked together a small python script implementing the most naive algorithm to check for a slightly larger counterexample; this was practical up to $m<1200$ and further confirmed the guess. Now usually numerical evidence is not worth a lot in number theory, even if carried out into the billions, and my expectation was that there would probably some large counterexample made up of many prime factors conspiring in exactly the right way, but that it would be impossible to find. While trying to deduce as many constraints on such a counterexample, I was very surprised to find the following:
+The evidence discussed for this statement in the MO thread is extremely thin, the OP mentions having checked it for $m<100$. I hacked together a small python script implementing the most naive algorithm to check for a slightly larger counterexample; this was practical up to $m<1200$ and further confirmed the guess. Now usually numerical evidence is not worth a lot in number theory, and even then 1200 is very small. My expectation was that there would probably some large counterexample made up of many prime factors conspiring in exactly the right way, but that it would be impossible to find. While trying to deduce as many constraints as possible on such a counterexample, I was very surprised to find the following:
 
 **Theorem.** The conjecture is true!
 
@@ -30,7 +30,7 @@ This shows in particular that a potential counterexample must have at least $3$ 
 
 **Lemma 2.** $S_m$ is a multiplicative subgroup of $(\bZ/m)^\times$.
 
-*Proof.* Take $r\in S_m$. The set of all $x\in S_m$ with $rx\in S_m$ contains $1$, and whenever $x,y$ lie in that set and $x+y\in (\bZ/m)^\times$, also $x+y$ lies in that set. So it contains $S_m$ and $rS_m\subseteq S_m$. So $S_m$ is closed under multiplication, and since every element of $(\bZ/m)^\times$ has finite order, it is a subgroup.
+*Proof.* Take $r\in S_m$. The set of all $x\in (\bZ/m)^\times$ with $rx\in S_m$ contains $1$, and whenever $x,y$ lie in that set and $x+y\in (\bZ/m)^\times$, also $x+y$ lies in that set. So it contains $S_m$ and $rS_m\subseteq S_m$. So $S_m$ is closed under multiplication, and since every element of $(\bZ/m)^\times$ has finite order, it is a subgroup.
 
 This allows us not only to multiply, but also to divide in $S_m$. We use this to deduce a decomposition property for $S_m$. Recall that if $m=ab$ with coprime $a,b$, then $(\bZ/m)^\times = (\bZ/a)^\times \times (\bZ/b)^\times$. Since the projections take $S_m$ to $S_a$ and $S_b$, $S_m$ is a subgroup of $S_a\times S_b$. We have the following:
 
