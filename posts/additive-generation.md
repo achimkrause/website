@@ -1,6 +1,6 @@
 ---
 title: Additively generating modular units
-date: 04.05.2025
+date: 2025-05-04
 ---
 
 This post answers affirmatively a question asked by user Irwin at [Mathoverflow](https://mathoverflow.net/questions/491704).
