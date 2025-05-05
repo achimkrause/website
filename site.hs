@@ -9,7 +9,7 @@ import Text.Pandoc.Options
 
 config :: Configuration
 config = defaultConfiguration
-  { destinationDirectory = "docs"
+  { destinationDirectory = "_site"
   }
 
 readerOptions = defaultHakyllReaderOptions
