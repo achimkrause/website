@@ -1,19 +1,23 @@
 body {
     color: black;
     font-size: 16px;
-    margin: 0px auto 0px auto;
-    width: 600px;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
 }
 
 div#header {
     border-bottom: 2px solid black;
     margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+    padding: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div#logo a {
     color: black;
-    float: left;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
@@ -37,7 +41,7 @@ div#footer {
     color: #555;
     font-size: 12px;
     margin-top: 30px;
-    padding: 12px 0px 12px 0px;
+    padding: 12px 0;
     text-align: right;
 }
 
@@ -56,7 +60,44 @@ div.info {
 }
 
 img {
-  margin: auto;
-  display: block;
-  border-radius: 30px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+    max-width: 100%;
+    height: auto;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    div#header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div#header #navigation {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    div#header #navigation a {
+        display: inline-block;
+        margin: 0 8px;
+    }
+
+    div#footer {
+        text-align: center;
+    }
+}
+
