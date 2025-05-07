@@ -3,7 +3,7 @@ title: QR codes from the command line
 date: 2025-05-07
 ---
 
-It is 2025 and somehow we still don't have a completely satisfactory solution to quickl move small pieces of data between all our various devices. For files, we have various cloud storage options that work quite well, but I frequently find myself in the situation that I have a link on one device that I want to quickly move to another, or a wifi password that I have manually copy, or similar.
+It is 2025 and somehow we still don't have a completely satisfactory solution to quickly move small pieces of data between all our various devices. For files, we have various cloud storage options that work quite well, but I frequently find myself in the situation that I have a link on one device that I want to quickly move to another, or a wifi password that I have manually copy, or similar.
 
 What I find surprisingly convenient is the Android feature of sharing wifi between phones through a QR code. You tap "share" in your wifi menu, hold the resulting QR code into the other persons phone camera, and they are connected. Inspired by this, I have sometimes resorted to use one of these online QR code generators on my computer, for example to get a zoom link from an ongoing meeting onto my tablet to connect that. These are full of ads and some of them have annoying UI, so this never quite felt like a good solution, even though it was reasonable effective.
 
@@ -11,7 +11,7 @@ In search for a better solution, I discovered today that there are actually usef
 
 ![](/images/qrencode.png)
 
-I got best results with the UTF8 output format which cleverly arranges [block glyphs of various shapes](https://www.compart.com/en/unicode/block/U+2580) into a QR code. There is also a pure ASCII output format which uses `#` symbols for the pixels, but I had trouble getting that to actually scan on my phone.
+I got the best results with the UTF8 output format which cleverly arranges [block glyphs of various shapes](https://www.compart.com/en/unicode/block/U+2580) into a QR code. There is also a pure ASCII output format which uses `#` symbols for the pixels, but I had trouble getting that to actually scan on my phone.
 This can be used in scripts, for example here is a quick script I hacked together to share the currently connected wifi as a QR code:
 
 ```bash
