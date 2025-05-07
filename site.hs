@@ -3,6 +3,7 @@
 import           Data.Monoid (mappend)
 import           Hakyll
 import Text.Pandoc.Options
+import Text.Pandoc.Highlighting (pygments)
 
 
 --------------------------------------------------------------------------------
@@ -14,7 +15,8 @@ config = defaultConfiguration
 
 readerOptions = defaultHakyllReaderOptions
 writerOptions = defaultHakyllWriterOptions
-  { writerHTMLMathMethod = MathJax ""
+  { writerHighlightStyle   = Just pygments
+  , writerHTMLMathMethod = MathJax ""
   }
 
 main :: IO ()

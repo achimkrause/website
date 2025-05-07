@@ -63,9 +63,12 @@ div.info {
 img {
     margin: auto;
     display: block;
-    border-radius: 30px;
     max-width: 100%;
     height: auto;
+}
+
+img.portrait{
+    border-radius: 30px;
 }
 
 /* Responsive adjustments */

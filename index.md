@@ -2,7 +2,7 @@
 title: Home
 ---
 
-![](/images/ow_portrait_krause.jpeg)
+![](/images/ow_portrait_krause.jpeg){.portrait}
 
 I am a Førsteamanuensis (Associate Professor) at University of Oslo, in the Algebra, Topology and Geometry section.
 
