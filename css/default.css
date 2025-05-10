@@ -105,3 +105,15 @@ img.portrait{
     }
 }
 
+.tikzpicture{
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tikzcd{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
