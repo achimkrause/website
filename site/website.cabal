@@ -12,8 +12,6 @@ maintainer:          achim.t.krause@gmail.com
 copyright:           2025 Achim Krause
 category:            Web
 build-type:          Simple
-extra-source-files:  README.md
-                     CHANGELOG.md
 
 executable website
   main-is:             site.hs
