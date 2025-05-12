@@ -37,7 +37,7 @@ RUN curl -sSL https://get.haskellstack.org/ | sh
 
 WORKDIR /site
 
-RUN stack --no-terminal setup
+RUN stack --no-terminal setup --resolver=lts-23.21
 RUN stack --no-terminal build pandoc
 RUN stack --no-terminal build hakyll
 

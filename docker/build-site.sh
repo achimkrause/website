@@ -1,4 +1,4 @@
 #!/bin/bash
 stack build
-stack exec website clean
-stack exec website build
+stack --allow-different-user exec website clean
+stack --allow-different-user exec website build
