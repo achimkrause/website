@@ -3,8 +3,8 @@ name: Build and Push Docker Image
 on:
   push:
     paths:
-      - 'Dockerfile'
-      - 'build-site.sh'
+      - 'docker/Dockerfile'
+      - 'docker/build-site.sh'
       - '.github/workflows/docker-build.yml'
     branches: [main]
 
