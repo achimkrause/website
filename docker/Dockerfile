@@ -35,12 +35,11 @@ ENV LC_ALL en_US.UTF-8
 # Install Stack
 RUN curl -sSL https://get.haskellstack.org/ | sh
 
-# Set up working directory (can match your repo structure)
 WORKDIR /site
 
 RUN stack --no-terminal setup
 RUN stack --no-terminal build pandoc
 RUN stack --no-terminal build hakyll
 
-# Default command
-CMD ["bash"]
+COPY build-site.sh /usr/local/bin/build-site.sh
+CMD ["build-site.sh"]
