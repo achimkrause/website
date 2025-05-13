@@ -39,7 +39,7 @@ iwctl --passphrase "$PASS" station wlan0 connect "$SSID"
 Along similar lines, here is a script that turns the clipboard content into a QR code, and can also be used in the reverse direction when called with `-i`:
 
 ~~~bash
-#/bin/bash!
+#!/bin/bash
 input=false
 
 while getopts "i" opt; do
