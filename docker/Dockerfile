@@ -37,9 +37,11 @@ RUN curl -sSL https://get.haskellstack.org/ | sh
 
 WORKDIR /site
 
-RUN stack --no-terminal setup --resolver=lts-23.21
-RUN stack --no-terminal build pandoc
-RUN stack --no-terminal build hakyll
+ENV STACK_RESOLVER="lts-23.21"
+
+RUN stack --no-terminal --resolver=${STACK_RESOLVER} setup
+RUN stack --no-terminal --resolver=${STACK_RESOLVER} build pandoc
+RUN stack --no-terminal --resolver=${STACK_RESOLVER} build hakyll
 
 COPY build-site.sh /usr/local/bin/build-site.sh
 CMD ["build-site.sh"]
