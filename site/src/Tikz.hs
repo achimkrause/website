@@ -28,14 +28,14 @@ compileTikzBlock cb@(CodeBlock (_,"tikzpicture":_,_) _)
        lift (compileTikzBlockWith 
                  "templates/tikzpicture.tex"
                  preamble
-                 FreeSize
+                 (FixedScale 0.15 "em")
                  cb)
 compileTikzBlock cb@(CodeBlock (_,"tikzcd":_,_) _)
   = do preamble <- get
        lift (compileTikzBlockWith 
                  "templates/tikzcd.tex"
                  preamble
-                 (FixedScale 0.2 "em")
+                 (FixedScale 0.15 "em")
                  cb)
 compileTikzBlock rb@(RawBlock (Format "tex") defLine) = do modify (++[defLine])
                                                            return rb

@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
     gcc \
     libffi-dev \
     poppler-utils \
-    texlive-pictures \
+    texlive-full \
     rubber \
     build-essential \
     pkg-config \
