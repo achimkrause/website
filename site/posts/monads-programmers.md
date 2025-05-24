@@ -1,6 +1,6 @@
 ---
 title: '"Monads for programmers" for mathematicians'
-date: 2025-05-22
+date: 2025-05-25
 ---
 
 \newcommand{\Hask}{\mathrm{Hask}}
