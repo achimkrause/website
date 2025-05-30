@@ -114,7 +114,7 @@ is a limit diagram.
 
 # Effective epimorphisms and sheaves as a localisation
 
-Let's take a step back. In our presheaf category, we had objects $\underline{U}$, and morphisms $\coprod \underline{U_i} -> underline{U}$ arising from covers. Out of such a $Y\to X$, we formed a simplicial diagram with terms $Y^{\times_X s+1}$, its Čech nerve. The $S_{\cU}$ was the colimit. For an $Y\to X$ let us more generally write $S_Y$ (or $S_{Y\to X}$ for the colimit of the Čech nerve. We call $Y\to X$ an *effective epimorphism* if $S_Y\to X$ is an equivalence.
+Let's take a step back. In our presheaf category, we had objects $\underline{U}$, and morphisms $\coprod \underline{U_i} \to \underline{U}$ arising from covers. Out of such a $Y\to X$, we formed a simplicial diagram with terms $Y^{\times_X s+1}$, its Čech nerve. The $S_{\cU}$ was the colimit. For an $Y\to X$ let us more generally write $S_Y$ (or $S_{Y\to X}$ for the colimit of the Čech nerve. We call $Y\to X$ an *effective epimorphism* if $S_Y\to X$ is an equivalence.
 
 **Example.** If $Y \to X$ is a morphism in $\cS$, $S_Y \to X$ is an equivalence onto the disjoint union of the components in the image. In particular, effective epimorphisms in $\cS$ are exactly those morphisms which are surjective on $\pi_0$.
 *Proof.* Using that $\cS$ is locally cartesian closed (meaning that pullback functors between slice categories preserve colimits, so "colimits are computed fibrewise"), this reduces to the case $X=\pt$. In that case it says that for any nonempty $Y$, the realisation of $Y^{\times \bullet+1}$ is contractible. This colimit has an obvious nullhomotopy (by forming cones towards an arbitrary point).
