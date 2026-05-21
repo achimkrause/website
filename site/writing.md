@@ -20,6 +20,7 @@ title: Writing
 
 # Lecture notes and related things
 
+* Lecture notes for a course on stable homotopy theory and nilpotence I taught in Oslo: [Algebraic Topology 3](/files/nilpotence.pdf)
 * With Thomas Nikolaus and Phil Pützstück: [Sheaves on Manifolds](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/sheaves-on-manifolds.pdf), a lecture course about compactly assembled $\infty$-categories, Verdier duality and Efimov K-theory.
 * With Thomas Nikolaus: [Lectures on THH](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/Lectures.pdf)
 * Also with Thomas Nikolaus: A [youtube lecture series](https://www.youtube.com/channel/UCk1WaD2LYVvNiRPteCBeSsA) on topological cyclic homology and Higher Algebra.
