@@ -20,6 +20,7 @@ title: Writing
 
 # Lecture notes and related things
 
+* Brief and not super polished notes for a series of talks given at the YTM 2026 in Copenhagen: [Perspectives on Spectra](/files/ytm-talks.pdf)
 * Lecture notes for a course on stable homotopy theory and nilpotence I taught in Oslo: [Algebraic Topology 3](/files/nilpotence.pdf)
 * With Thomas Nikolaus and Phil Pützstück: [Sheaves on Manifolds](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/sheaves-on-manifolds.pdf), a lecture course about compactly assembled $\infty$-categories, Verdier duality and Efimov K-theory.
 * With Thomas Nikolaus: [Lectures on THH](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/Papers/Lectures.pdf)
